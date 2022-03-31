@@ -1,6 +1,5 @@
 import React from "react";
 import face from "../images/troll-face.png";
-console.log(face);
 function Header() {
   return (
     <header className="header">
