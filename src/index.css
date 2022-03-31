@@ -29,3 +29,42 @@ body {
   font-weight: 500;
   font-size: .75rem;
 }
+
+main {
+  padding: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  
+
+}
+.form--input {
+  flex: 30%;
+  padding: 20px;
+  margin: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.form--btn {
+  flex: 100%;
+  padding: 20px;
+  margin: 10px 25px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .form--input {
+    flex: 100%;
+  }
+}
