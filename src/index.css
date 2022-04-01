@@ -32,9 +32,13 @@ body {
 
 main {
   padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  
+
 }
 
-.form {
+.form  {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -44,7 +48,7 @@ main {
 
 }
 .form--input {
-  flex: 30%;
+  flex: 40%;
   padding: 20px;
   margin: 10px 25px;
   font-size: 1.2rem;
@@ -60,6 +64,15 @@ main {
   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
   color: white;
   cursor: pointer;
+}
+
+
+main--image {
+display: flex;
+margin: auto;
+ max-width: 300px;
+ height: auto;
+
 }
 
 

@@ -1,14 +1,18 @@
+import React, { useState } from "react";
 import memesData from "../memesData";
 
-function EventHandler() {
-  const memesArray = memesData.data.memes;
-
-  const randonNumber = Math.floor(Math.random() * memesArray.length);
-  const url = memesArray[randonNumber].url;
-  console.log(url);
-}
-
 function Meme() {
+  const [memeImage, setMemeImage] = useState("");
+
+  function EventHandler() {
+    const memesArray = memesData.data.memes;
+
+    const randonNumber = Math.floor(Math.random() * memesArray.length);
+    const url = memesArray[randonNumber].url;
+    setMemeImage(() => url);
+    console.log(memeImage);
+  }
+
   return (
     <main>
       <div className="form">
@@ -26,6 +30,7 @@ function Meme() {
           Get a new meme image 🖼
         </button>
       </div>
+      <img className="main--image" src={memeImage} alt="" />
     </main>
   );
 }
